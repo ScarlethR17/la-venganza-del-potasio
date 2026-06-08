@@ -1,0 +1,62 @@
+[gd_scene format=3 uid="uid://hvw2tjk7rxpp"]
+
+[ext_resource type="Script" uid="uid://mwuv8mfrihwi" path="res://scripts/oposum.gd" id="1_3m2ad"]
+[ext_resource type="Texture2D" uid="uid://cjv7ufvnynqyj" path="res://assets/enemies/slug.png" id="2_6enwh"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_piqym"]
+atlas = ExtResource("2_6enwh")
+region = Rect2(0, 0, 32, 21)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8w1mo"]
+atlas = ExtResource("2_6enwh")
+region = Rect2(32, 0, 32, 21)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fe4js"]
+atlas = ExtResource("2_6enwh")
+region = Rect2(64, 0, 32, 21)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gd4jo"]
+atlas = ExtResource("2_6enwh")
+region = Rect2(96, 0, 32, 21)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fblae"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_piqym")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8w1mo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fe4js")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gd4jo")
+}],
+"loop": true,
+"name": &"new_animation",
+"speed": 12.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_igoil"]
+
+[node name="caracol" type="CharacterBody2D" unique_id=1443190649]
+collision_layer = 4
+script = ExtResource("1_3m2ad")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=76676327]
+sprite_frames = SubResource("SpriteFrames_fblae")
+animation = &"new_animation"
+autoplay = "new_animation"
+frame_progress = 0.633067
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1044778939]
+position = Vector2(0, 4)
+shape = SubResource("CircleShape2D_igoil")
+
+[node name="Timer" type="Timer" parent="." unique_id=1860054892]
+wait_time = 2.0
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

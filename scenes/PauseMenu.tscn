@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://b4bi0f3d0rm3y"]
+
+[ext_resource type="Script" uid="uid://c001kiwpkxchg" path="res://scripts/PauseMenu.gd" id="1_p4u5m"]
+[ext_resource type="FontFile" uid="uid://cgrrisky3ouo1" path="res://assets/fonts/m6x11plus.ttf" id="2_g4jo0"]
+
+[node name="PauseMenu" type="CanvasLayer" unique_id=1890964856]
+process_mode = 3
+visible = false
+script = ExtResource("1_p4u5m")
+
+[node name="Overlay" type="ColorRect" parent="." unique_id=1973125819]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0, 0, 0, 0.5)
+
+[node name="VBox" type="VBoxContainer" parent="." unique_id=89442621]
+offset_left = 121.0
+offset_top = 80.0
+offset_right = 229.0
+offset_bottom = 142.0
+
+[node name="Title" type="Label" parent="VBox" unique_id=439296882]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_g4jo0")
+theme_override_font_sizes/font_size = 24
+text = "— PAUSA —"
+horizontal_alignment = 1
+
+[node name="ResumeButton" type="Button" parent="VBox" unique_id=1736583027]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_g4jo0")
+theme_override_font_sizes/font_size = 24
+text = "Reanudar"
+
+[connection signal="pressed" from="VBox/ResumeButton" to="." method="_on_resume_pressed"]

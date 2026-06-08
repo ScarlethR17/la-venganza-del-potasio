@@ -1,0 +1,74 @@
+[gd_scene format=3 uid="uid://tuungj8a6emi"]
+
+[ext_resource type="Script" uid="uid://dykii3t0o0t3k" path="res://scripts/GameUI.gd" id="1_scrip"]
+[ext_resource type="FontFile" uid="uid://cgrrisky3ouo1" path="res://assets/fonts/m6x11plus.ttf" id="2_4s3j0"]
+[ext_resource type="Texture2D" uid="uid://c7f7te82ipvwf" path="res://assets/textures/coin_anim_strip_6.png" id="3_rs3te"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7ro0d"]
+atlas = ExtResource("3_rs3te")
+region = Rect2(0, 0, 8, 8)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_56cg4"]
+atlas = ExtResource("3_rs3te")
+region = Rect2(8, 0, 8, 8)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t4xhs"]
+atlas = ExtResource("3_rs3te")
+region = Rect2(16, 0, 8, 8)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dc875"]
+atlas = ExtResource("3_rs3te")
+region = Rect2(24, 0, 8, 8)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g2w7k"]
+atlas = ExtResource("3_rs3te")
+region = Rect2(32, 0, 8, 8)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qfosg"]
+atlas = ExtResource("3_rs3te")
+region = Rect2(40, 0, 8, 8)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_s3u02"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7ro0d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_56cg4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t4xhs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dc875")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g2w7k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qfosg")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="GameUI" type="CanvasLayer" unique_id=1901141009]
+script = ExtResource("1_scrip")
+
+[node name="ScoreLabel" type="Label" parent="." unique_id=1713451510]
+offset_left = 30.0
+offset_top = 5.0
+offset_right = 52.0
+offset_bottom = 33.0
+theme_override_fonts/font = ExtResource("2_4s3j0")
+theme_override_font_sizes/font_size = 27
+text = " 0"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=213236001]
+position = Vector2(16, 19)
+scale = Vector2(2.625, 2.875)
+sprite_frames = SubResource("SpriteFrames_s3u02")
+autoplay = "default"
+frame_progress = 0.14115143

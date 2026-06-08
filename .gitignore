@@ -1,0 +1,17 @@
+# Godot 4
+.godot/
+*.translation
+*.import
+*.bak
+*.tmp
+*.orig
+*.autosave
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+*.code-workspace
+.vscode/

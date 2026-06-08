@@ -1,0 +1,91 @@
+[gd_scene format=3 uid="uid://cwgu8iu7gofuh"]
+
+[ext_resource type="Script" uid="uid://dfw2hcyxu0myn" path="res://scripts/eagle.gd" id="1_gtyer"]
+[ext_resource type="Texture2D" uid="uid://dse8reu3d6edd" path="res://assets/enemies/bee.png" id="2_h0p8x"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_brdbq"]
+atlas = ExtResource("2_h0p8x")
+region = Rect2(0, 0, 37, 39)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ivcef"]
+atlas = ExtResource("2_h0p8x")
+region = Rect2(37, 0, 37, 39)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cgwtv"]
+atlas = ExtResource("2_h0p8x")
+region = Rect2(74, 0, 37, 39)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m1mtr"]
+atlas = ExtResource("2_h0p8x")
+region = Rect2(111, 0, 37, 39)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_crfwe"]
+atlas = ExtResource("2_h0p8x")
+region = Rect2(148, 0, 37, 39)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qmkle"]
+atlas = ExtResource("2_h0p8x")
+region = Rect2(185, 0, 37, 39)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_54r5y"]
+atlas = ExtResource("2_h0p8x")
+region = Rect2(222, 0, 37, 39)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_su5kn"]
+atlas = ExtResource("2_h0p8x")
+region = Rect2(259, 0, 37, 39)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_sm61u"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_brdbq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ivcef")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cgwtv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m1mtr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_crfwe")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qmkle")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_54r5y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_su5kn")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 12.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gtyer"]
+size = Vector2(26, 31)
+
+[node name="Abeja" type="Area2D" unique_id=244720395]
+collision_layer = 4
+script = ExtResource("1_gtyer")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=27707275]
+scale = Vector2(-1.0370823, 0.99526334)
+sprite_frames = SubResource("SpriteFrames_sm61u")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=776047584]
+position = Vector2(1, -0.5)
+shape = SubResource("RectangleShape2D_gtyer")
+
+[node name="Timer" type="Timer" parent="." unique_id=773875532]
+wait_time = 2.0
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

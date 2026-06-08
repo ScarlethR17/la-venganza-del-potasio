@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://b4mdcl4ckpbbp"]
+
+[ext_resource type="Script" uid="uid://dh2u3m3jcy20d" path="res://scripts/MainMenu.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://assets/textures/ui/menu_bg.png" id="2_nahvw"]
+[ext_resource type="FontFile" path="res://assets/fonts/Endgame DEMO.otf" id="3_4elqj"]
+[ext_resource type="FontFile" path="res://assets/fonts/my game.ttf" id="4_ri767"]
+
+[node name="MainMenu" type="Control" unique_id=607445998]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource("1_script")
+
+[node name="Background" type="Sprite2D" parent="." unique_id=555817864]
+position = Vector2(184, 128)
+scale = Vector2(0.26136363, 0.33333334)
+texture = ExtResource("2_nahvw")
+
+[node name="VBox" type="VBoxContainer" parent="." unique_id=704161778]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 40.0
+offset_right = 336.0
+offset_bottom = 200.0
+
+[node name="Title" type="Label" parent="VBox" unique_id=519338022]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.65882355, 0, 0.078431375, 1)
+theme_override_fonts/font = ExtResource("3_4elqj")
+theme_override_font_sizes/font_size = 27
+text = "La venganza del 
+potasio"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="JugarButton" type="Button" parent="VBox" unique_id=1568350942]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_ri767")
+text = "JUGAR"
+
+[connection signal="pressed" from="VBox/JugarButton" to="." method="_on_jugar_pressed"]

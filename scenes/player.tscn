@@ -1,0 +1,196 @@
+[gd_scene format=3 uid="uid://bapvy71043313"]
+
+[ext_resource type="Script" uid="uid://cefula47ay66j" path="res://scripts/player.gd" id="1_1akqa"]
+[ext_resource type="Texture2D" uid="uid://cd6ms2l3byeem" path="res://assets/textures/player/potasio/attack/attack_01.png" id="2_c6x0f"]
+[ext_resource type="Texture2D" uid="uid://7xjvgqy1qtt2" path="res://assets/textures/player/potasio/attack/attack_02.png" id="3_jp1hh"]
+[ext_resource type="Texture2D" uid="uid://yxupuis5m3uh" path="res://assets/textures/player/potasio/attack/attack_03.png" id="4_qs4pp"]
+[ext_resource type="Texture2D" uid="uid://dw42kg5muo7vn" path="res://assets/textures/player/potasio/attack/attack_04.png" id="5_iyprq"]
+[ext_resource type="Texture2D" uid="uid://hhrax1ivw787" path="res://assets/textures/player/potasio/attack/attack_05.png" id="6_f4lon"]
+[ext_resource type="Texture2D" uid="uid://cpfhgwplipmv" path="res://assets/textures/player/potasio/attack/attack_06.png" id="7_8ynux"]
+[ext_resource type="Texture2D" uid="uid://mt5h2opycdop" path="res://assets/textures/player/potasio/attack/attack_07.png" id="8_d30e8"]
+[ext_resource type="Texture2D" uid="uid://dxpk3nggy05ap" path="res://assets/textures/player/potasio/attack/attack_08.png" id="9_6pogt"]
+[ext_resource type="Texture2D" uid="uid://c1eu6027pflny" path="res://assets/textures/player/potasio/attack/attack_09.png" id="10_ie76m"]
+[ext_resource type="Texture2D" uid="uid://bqmad6rjalwpt" path="res://assets/textures/player/potasio/jump/jump_07.png" id="11_dy65m"]
+[ext_resource type="Texture2D" uid="uid://ctl0yo5r86bja" path="res://assets/textures/player/potasio/jump/jump_08.png" id="12_maysp"]
+[ext_resource type="Texture2D" uid="uid://c33bfr1yjckox" path="res://assets/textures/player/potasio/jump/jump_09.png" id="13_1l10g"]
+[ext_resource type="Texture2D" uid="uid://tfx8r1knak4f" path="res://assets/textures/player/potasio/jump/jump_10.png" id="14_6rl0i"]
+[ext_resource type="Texture2D" uid="uid://75rvai1456l5" path="res://assets/textures/player/potasio/jump/jump_11.png" id="15_7x5p2"]
+[ext_resource type="Texture2D" uid="uid://kb5wp8hqphao" path="res://assets/textures/player/potasio/idle/idle_01.png" id="16_6eb1q"]
+[ext_resource type="Texture2D" uid="uid://c1gdwafvtkqid" path="res://assets/textures/player/potasio/idle/idle_02.png" id="17_wvbyc"]
+[ext_resource type="Texture2D" uid="uid://cor68a4208aw5" path="res://assets/textures/player/potasio/idle/idle_03.png" id="18_gvnt1"]
+[ext_resource type="Texture2D" uid="uid://docxaufv2m6sk" path="res://assets/textures/player/potasio/idle/idle_04.png" id="19_1kmt7"]
+[ext_resource type="Texture2D" uid="uid://bltg7aj62py8" path="res://assets/textures/player/potasio/idle/idle_05.png" id="20_c4i3b"]
+[ext_resource type="Texture2D" uid="uid://cak75fnriq0pv" path="res://assets/textures/player/potasio/idle/idle_06.png" id="21_uvbbp"]
+[ext_resource type="Texture2D" uid="uid://bl84o4f2xd8ul" path="res://assets/textures/player/potasio/idle/idle_07.png" id="22_7v2uk"]
+[ext_resource type="Texture2D" uid="uid://bctucuij6ovuk" path="res://assets/textures/player/potasio/idle/idle_08.png" id="23_m6nl3"]
+[ext_resource type="Texture2D" uid="uid://b8ej4ecn8e3ge" path="res://assets/textures/player/potasio/jump/jump_01.png" id="24_8hx1r"]
+[ext_resource type="Texture2D" uid="uid://dajgnxhud2du0" path="res://assets/textures/player/potasio/jump/jump_02.png" id="25_qas3k"]
+[ext_resource type="Texture2D" uid="uid://bso8uixpf0e0j" path="res://assets/textures/player/potasio/jump/jump_03.png" id="26_ntwt4"]
+[ext_resource type="Texture2D" uid="uid://ddqugyeuqhbxs" path="res://assets/textures/player/potasio/jump/jump_04.png" id="27_kdg72"]
+[ext_resource type="Texture2D" uid="uid://dwc6ww4pss0rx" path="res://assets/textures/player/potasio/walk/walk_01.png" id="28_qpoj2"]
+[ext_resource type="Texture2D" uid="uid://d188qwbljeivd" path="res://assets/textures/player/potasio/walk/walk_02.png" id="29_3e3ym"]
+[ext_resource type="Texture2D" uid="uid://b4w853d7c8gyo" path="res://assets/textures/player/potasio/walk/walk_03.png" id="30_gxi5p"]
+[ext_resource type="Texture2D" uid="uid://dr4pw81fpdi55" path="res://assets/textures/player/potasio/walk/walk_04.png" id="31_yxu6j"]
+[ext_resource type="Texture2D" uid="uid://d433u4ucu03d" path="res://assets/textures/player/potasio/walk/walk_05.png" id="32_mdkl3"]
+[ext_resource type="Texture2D" uid="uid://cnb0spomcyvf" path="res://assets/textures/player/potasio/walk/walk_06.png" id="33_68syb"]
+[ext_resource type="Texture2D" uid="uid://bwl07h6mor2e6" path="res://assets/textures/player/potasio/walk/walk_07.png" id="34_x0uyb"]
+[ext_resource type="Texture2D" uid="uid://c18b1wxq5co3q" path="res://assets/textures/player/potasio/walk/walk_08.png" id="35_f8nak"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ok28f"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rt5h9"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_f4wda"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_c6x0f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_jp1hh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_qs4pp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_iyprq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_f4lon")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_8ynux")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_d30e8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_6pogt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_ie76m")
+}],
+"loop": true,
+"name": &"crouch",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_dy65m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_maysp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_1l10g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_6rl0i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_7x5p2")
+}],
+"loop": true,
+"name": &"fall",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("16_6eb1q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_wvbyc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_gvnt1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_1kmt7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_c4i3b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_uvbbp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_7v2uk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_m6nl3")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("24_8hx1r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_qas3k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_ntwt4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_kdg72")
+}],
+"loop": true,
+"name": &"jump",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("28_qpoj2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_3e3ym")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_gxi5p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_yxu6j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_mdkl3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_68syb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_x0uyb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_f8nak")
+}],
+"loop": true,
+"name": &"run",
+"speed": 8.0
+}]
+
+[node name="Player" type="CharacterBody2D" unique_id=1707148824]
+collision_layer = 2
+groups = ["player"]
+script = ExtResource("1_1akqa")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1341175143]
+shape = SubResource("RectangleShape2D_ok28f")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1753835151]
+position = Vector2(0.2176289, 0.2176292)
+scale = Vector2(-0.18094878, 0.17078747)
+sprite_frames = SubResource("SpriteFrames_f4wda")
+animation = &"crouch"
+autoplay = "crouch"
+
+[node name="EnemyDetector" type="Area2D" parent="."]
+collision_layer = 1
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EnemyDetector"]
+shape = SubResource("RectangleShape2D_rt5h9")
+
+[connection signal="body_entered" from="EnemyDetector" to="." method="_on_enemy_detector_body_entered"]
+[connection signal="area_entered" from="EnemyDetector" to="." method="_on_enemy_detector_area_entered"]
