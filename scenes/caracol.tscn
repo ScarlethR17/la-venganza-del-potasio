@@ -39,9 +39,11 @@ animations = [{
 "speed": 12.0
 }]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_igoil"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3ynl4"]
+size = Vector2(22, 18)
 
 [node name="caracol" type="CharacterBody2D" unique_id=1443190649]
+position = Vector2(-1, -1)
 collision_layer = 4
 script = ExtResource("1_3m2ad")
 
@@ -52,8 +54,8 @@ autoplay = "new_animation"
 frame_progress = 0.633067
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1044778939]
-position = Vector2(0, 4)
-shape = SubResource("CircleShape2D_igoil")
+position = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_3ynl4")
 
 [node name="Timer" type="Timer" parent="." unique_id=1860054892]
 wait_time = 2.0

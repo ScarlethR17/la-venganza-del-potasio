@@ -124,6 +124,7 @@ func _spring_launch():
 	is_spring_charging = false
 	spring_charged = false
 	is_crouching = false
+	
 	is_invulnerable = true
 	invulnerability_timer = INVULNERABILITY_DURATION
 
