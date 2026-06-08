@@ -8,7 +8,7 @@ Juego de plataformas 2D hecho en **Godot 4.6.3**.
 |---|---|
 | ← → / A D | Moverse |
 | ↑ / W / Espacio | Saltar |
-| ↓ | Agacharse |
+| ↓ | atacar o inpulsarte |
 | ESC | Pausa |
 
 ## Objetivo
